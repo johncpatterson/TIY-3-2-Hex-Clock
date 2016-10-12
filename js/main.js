@@ -22,14 +22,12 @@ function getTime() {
   
     timeHolder.innerHTML = currentTime;
   
-  var hexCurrentTime = hoursString + minutesString + secondsString;
+    var hexCurrentTime = hoursString + minutesString + secondsString;
     
-    
-  
     hexHolder.innerHTML = "#"+hexCurrentTime;
    
     var newBackgroundColor = "#" + hexCurrentTime
-  document.getElementById("body").style.backgroundColor= newBackgroundColor;
+    document.getElementById("body").style.backgroundColor= newBackgroundColor;
   
   // var hexString = hexCurrentTime.toString(16);
   //   hex2Holder.innerHTML = "#"+hexString;
