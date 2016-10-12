@@ -17,27 +17,24 @@ function getTime() {
     var minutesString = minutes.toString();
     var secondsString = seconds.toString();
     var newTime = timeHolder;
-     
+
     var currentTime = hoursString + ":" + minutesString + ":" + secondsString;
-  
+
     timeHolder.innerHTML = currentTime;
-  
+
     var hexCurrentTime = hoursString + minutesString + secondsString;
-    
-    hexHolder.innerHTML = "#"+hexCurrentTime;
-   
+
+    hexHolder.innerHTML = "#" + hexCurrentTime;
+
     var newBackgroundColor = "#" + hexCurrentTime
-    document.getElementById("body").style.backgroundColor= newBackgroundColor;
-  
-  // var hexString = hexCurrentTime.toString(16);
-  //   hex2Holder.innerHTML = "#"+hexString;
-  
+    document.getElementById("body").style.backgroundColor = newBackgroundColor;
+
 }
 
 function updateTime() {
     currentTime = setInterval(getTime, 1000);
 }
 
-updateTime(); 
+updateTime();
 
 // hexString = yourNumber.toString(16);

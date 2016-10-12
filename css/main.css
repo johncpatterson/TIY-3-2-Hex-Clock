@@ -6,6 +6,9 @@
   font-size: 80px;
   font-family: 'Bungee Shade', cursive; }
 
+#hex2 {
+  margin-bottom: 45px; }
+
 .time_header,
 .hex_header {
   color: #ffffff;
