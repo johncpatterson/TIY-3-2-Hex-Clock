@@ -15,14 +15,12 @@ function getTime() {
     var hoursString = hours.toString();
     var minutesString = minutes.toString();
     var secondsString = seconds.toString();
-    // var newTime = timeHolder;
+   
 
     var currentTime = hoursString + ":" + minutesString + ":" + secondsString;
-
     timeHolder.innerHTML = currentTime;
 
     var hexCurrentTime = hoursString + minutesString + secondsString;
-
     hexHolder.innerHTML = "#" + hexCurrentTime;
 
     var newBackgroundColor = "#" + hexCurrentTime;
