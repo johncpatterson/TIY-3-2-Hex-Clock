@@ -15,7 +15,7 @@ function getTime() {
     var hoursString = hours.toString();
     var minutesString = minutes.toString();
     var secondsString = seconds.toString();
-    var newTime = timeHolder;
+    // var newTime = timeHolder;
 
     var currentTime = hoursString + ":" + minutesString + ":" + secondsString;
 
