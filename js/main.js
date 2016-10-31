@@ -1,6 +1,5 @@
 var timeHolder = document.getElementById("time");
 var hexHolder = document.getElementById("hex");
-var hex2Holder = document.getElementById("hex2");
 
 function getTime() {
     var now = new Date();
@@ -26,9 +25,8 @@ function getTime() {
 
     hexHolder.innerHTML = "#" + hexCurrentTime;
 
-    var newBackgroundColor = "#" + hexCurrentTime
+    var newBackgroundColor = "#" + hexCurrentTime;
     document.getElementById("body").style.backgroundColor = newBackgroundColor;
-
 }
 
 function updateTime() {
@@ -37,4 +35,3 @@ function updateTime() {
 
 updateTime();
 
-// hexString = yourNumber.toString(16);
